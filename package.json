@@ -39,18 +39,16 @@
     "sass": "mkdir -p ./assets/css && node-sass --output-style compressed -o ./assets/css ./sass/styles.scss",
     "css": "npm run sass",
     "watch-sass": "nodemon -w ./sass -e \"scss\" -x \"npm run css\"",
-    "prefix": "postcss ./assets/css/styles.css --no-map --use autoprefixer -o ./assets/css/styles.css",
     "build": "npm run clean && npm run imgs && npm run fonts && npm run css && npm run js",
     "server": "run-p start-server start-mocks",
     "start-server": "http-server . --cors -c-1 -g -P http://127.0.0.1:8282",
     "clean": "rm -rf ./assets",
     "templates": "node ./scripts/template-parser",
-    "watch-templates": "nodemon -w ./templates -e mustache,html,json -x \"npm run templates\"",
-    "watch-js-dev": "webpack -w --mode=development"
+    "watch-templates": "nodemon -w ./templates -e mustache,html,json -x \"npm run templates\""
   },
   "repository": {
     "type": "git",
-    "url": "git-url-here"
+    "url": "https://github.com/johnhoysa/boxcar"
   },
   "keywords": [],
   "author": "",

@@ -54,5 +54,6 @@ Mustache templates in this repo are set up to use YAML front matter as well as J
 Front matter is ...
 
 TO DO:
+add 'font' and 'image' folders to repo to allow npm run build to work
 Provide documentation on how to use YAML and JSON.
 Talk about creating a componenet library

@@ -1,1 +1,1 @@
-console.log("Scripts have been loaded to project. Watch running");
+console.log("Last.fm testing ready to start");

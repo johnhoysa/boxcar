@@ -1,0 +1,10 @@
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+Access-Control-Allow-Origin: *
+
+{
+  "CONTINUE_URL": "/html/checkout-3.html",
+  "SUCCESS": true,
+  "ORDER_NUMBER": "L5257841",
+  "DEFAULT_SUCCESS": true
+}

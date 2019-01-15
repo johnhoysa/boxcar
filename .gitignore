@@ -1,8 +1,5 @@
 .vscode
 node_modules
 assets
-dist
 .DS_Store
-.sass-cache
-bower_components
 html

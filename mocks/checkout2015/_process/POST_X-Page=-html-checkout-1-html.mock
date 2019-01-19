@@ -1,0 +1,12 @@
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+Access-Control-Allow-Origin: *
+
+{
+  "CONTINUE_URL": "/html/checkout/checkout-2.html",
+  "SUCCESS": true,
+  "ERRORS": [],
+  "DATA": "",
+  "RETURN_TYPE": "standard",
+  "INVALID": []
+}

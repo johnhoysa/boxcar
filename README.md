@@ -28,7 +28,7 @@ This command creates CSS from SASS, builds and minifies JS:
 
 This command also runs mocks
 
-`npm run server`
+`npm start`
 
 Stop Server:
 

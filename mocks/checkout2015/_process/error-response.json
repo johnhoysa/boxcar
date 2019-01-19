@@ -1,0 +1,39 @@
+{
+  "CONTINUE_URL": "",
+  "SUCCESS": false,
+  "ERRORS": [
+    "Please enter a valid e-mail address.",
+    "Please enter your credit card number.",
+    "Please enter your credit card's CVS/CSC.",
+    "Please enter your credit card's year of expiration.",
+    "Please enter your credit card's month of expiration.",
+    "Please enter a valid password.",
+    "Enter your Billing First Name",
+    "Enter your Billing Last Name",
+    "Enter your Billing Address (Line 1)",
+    "Enter your Billing City",
+    "Select your Billing State",
+    "Enter a valid Billing US Zip Code",
+    "Enter your Billing Phone Number",
+    "Please read and accept our Data Privacy Policy before continuing."
+  ],
+  "DATA": "",
+  "RETURN_TYPE": "standard",
+  "INVALID": [
+    "email",
+    "ccNumber",
+    "ccCSC",
+    "ccExpYear",
+    "ccExpMonth",
+    "password",
+    "bFirstName",
+    "bLastName",
+    "bAddress1",
+    "bCountry",
+    "bCity",
+    "bState",
+    "bZip",
+    "bPhone",
+    "acceptedDataPrivacyFlag"
+  ]
+}

@@ -1,6 +1,6 @@
 # Project Starter Kit
 
-This is a work in progress so items may not work. Use at own risk.
+A build package to use as a project starting base. This is a work in progress so items may not work as advertized.
 
 ---
 

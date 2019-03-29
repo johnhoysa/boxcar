@@ -1,5 +1,19 @@
-p {
-  color: pink;
-  border: 1px solid red;
-  border-radius: 3px;
+@import "./thirdparty/reset";
+@import "variables.scss";
+@import "./mixins/container.scss";
+@import "./project/type.scss";
+@import "./project/header.scss";
+@import "./project/content.scss";
+@import "./project/footer.scss";
+a,
+a:hover {
+  color: $color-highlight;
+  text-decoration: none;
+  line-height: 100%;
+}
+
+.img-resp {
+  display: block;
+  width: 100%;
+  height: auto;
 }

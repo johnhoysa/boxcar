@@ -1,0 +1,79 @@
+main {
+  @include container();
+  margin-top: 48px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 32px;
+}
+
+aside {
+  padding-top: 14px;
+  grid-column: span 4;
+}
+aside h4 {
+  font-size: 24px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid $color-highlight;
+}
+
+aside p {
+  margin-top: 8px;
+  margin-bottom: 24px;
+  font-size: 16px;
+  line-height: 120%;
+}
+
+article {
+  grid-column: span 8;
+}
+
+article h2 {
+  font-size: 40px;
+  margin-bottom: 8px;
+}
+
+article p,
+article ul,
+article li {
+  font-size: 18px;
+  line-height: 120%;
+  margin-bottom: 16px;
+}
+
+article li {
+  margin-bottom: 0;
+}
+
+article > a {
+  display: inline;
+  border-radius: 4px;
+  background-color: $color-highlight;
+  color: $color-light;
+  font-size: 16px;
+  margin-top: 8px;
+  padding: 8px 16px;
+}
+article > a:hover {
+  background-color: lighten($color-highlight, 8%);
+  color: $color-light;
+}
+
+@media (max-width: 744px) {
+  aside {
+    grid-column: span 12;
+  }
+
+  aside h4 {
+    font-size: 16px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid $color-highlight;
+  }
+
+  aside p {
+    font-size: 14px;
+  }
+  article {
+    grid-column: span 12;
+    margin-top: 24px;
+  }
+}

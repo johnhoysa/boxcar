@@ -1,0 +1,100 @@
+header {
+  background: repeating-linear-gradient(
+    45deg,
+    $color-light,
+    $color-light 1px,
+    lighten($color-dark, 76%) 2px,
+    lighten(#222, 90%) 2px
+  );
+}
+header ul {
+  background-color: $color-dark;
+  font-family: "Playfair Display", serif;
+  font-size: 21px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+header li {
+  display: flex;
+  width: 248px;
+  height: 64px;
+  border-left: 2px solid $color-light;
+  text-align: right;
+}
+
+header li:first-of-type {
+  background-color: $color-highlight;
+}
+header li > a {
+  color: #fff;
+  width: 100%;
+  height: 48px;
+  padding: 8px;
+}
+header li > a:hover {
+  background-color: lighten($color-dark, 20%);
+}
+
+@media (max-width: 744px) {
+  header ul {
+    width: 100%;
+  }
+  header li {
+    width: 33%;
+  }
+  header li:first-of-type {
+    border: none;
+  }
+}
+
+//Profile Image and content
+header section {
+  max-width: 1152px;
+  padding: 0 16px;
+  width: 100%;
+  position: relative;
+  margin: 0 auto 0 auto;
+  box-sizing: border-box;
+  display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  align-items: center;
+}
+
+header section img {
+  width: 248px;
+  margin-right: 32px;
+}
+
+header section article {
+  flex: 1;
+}
+header section article h1 {
+  font-size: 48px;
+}
+
+header section article p {
+  font-size: 24px;
+  line-height: 140%;
+}
+
+@media (max-width: 744px) {
+  header section {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+  header section img {
+    width: 248px;
+    margin: 0 auto;
+    display: block;
+  }
+  header section article {
+    width: 100%;
+    display: block;
+    margin-top: 0px;
+    text-align: center;
+  }
+}

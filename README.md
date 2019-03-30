@@ -1,6 +1,6 @@
 # Project Starter Kit
 
-A build package to use as a project starting base. This is a work in progress so items may not work as advertized.
+A build package to use as a project starting base. This was orginally setup by a friend and I have taken his code base and adjusted as needed for myself.
 
 ---
 

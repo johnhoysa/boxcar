@@ -1,9 +1,9 @@
-@import "./thirdparty/reset";
 @import "variables.scss";
+@import "./thirdparty/reset";
 @import "./mixins/container.scss";
 @import "./project/type.scss";
 @import "./project/header.scss";
-@import "./project/content.scss";
+@import "./project/about-me.scss";
 @import "./project/footer.scss";
 a,
 a:hover {

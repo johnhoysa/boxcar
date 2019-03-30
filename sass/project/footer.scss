@@ -18,9 +18,10 @@ footer nav {
 }
 
 footer h4 {
-  font-size: 16px;
+  font-size: 21px;
+  font-weight: 400;
   color: #fff;
-  width: 50%;
+  width: 80%;
   padding-bottom: 4px;
   border-bottom: 1px solid $color-highlight;
 }
@@ -32,20 +33,29 @@ footer ul {
 footer ul li {
   color: white;
   line-height: 120%;
-  font-size: 14px;
+  font-size: 16px;
+  margin-top: 8px;
 }
 footer ul li a {
   color: $color-light;
 }
 
+footer ul li a:hover {
+  color: $color-highlight;
+}
+
 @media (max-width: 744px) {
-  footer section,
+  footer section article,
   footer nav {
     display: block;
     grid-column: span 12;
-    margin-top: 32px;
+    margin-top: 24px;
   }
   footer section:first-of-type {
     margin-top: 0;
+  }
+
+  footer h4 {
+    width: 80%;
   }
 }

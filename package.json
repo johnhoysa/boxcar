@@ -31,13 +31,14 @@
   "scripts": {
     "imgs": "mkdir -p ./assets && cp -r ./images/ ./assets/images",
     "fonts": "mkdir -p ./assets && cp -r ./fonts ./assets/fonts",
+    "documents": "mkdir -p ./assets && cp -r ./documents ./assets/documents",
     "project-js": "uglifyjs ./js/scripts.js -m -c >> ./assets/js/scripts.js",
-    "js": "mkdir -p ./assets/js && npm run project-js && webpack --mode\"production\"",
-    "watch-js": "webpack -w --mode=production",
-    "sass": "mkdir -p ./assets/css && node-sass --output-style compressed -o ./assets/css ./sass/styles.scss",
+    "js": "mkdir -p ./assets/js && npm run project-js",
+    "watch-js": "webpack -w --mode=development",
+    "sass": "mkdir -p ./assets/css && node-sass --output-style compact -o ./assets/css ./sass/styles.scss",
     "css": "npm run sass",
     "watch-sass": "nodemon -w ./sass -e \"scss\" -x \"npm run css\"",
-    "build": "npm run clean && npm run imgs && npm run fonts && npm run css && npm run js && npm run templates",
+    "build": "npm run clean && npm run imgs && npm run fonts && npm run documents && npm run css && npm run js && npm run templates",
     "mocks": "mkdir -p ./assets/js && cp -r ./js/mocks/ ./assets/mocks",
     "start-mocks": "MOCK_HEADERS=x-page,x-page-error mockserver -p 8282 -m ./mocks",
     "start": "run-p start-server start-mocks",
@@ -48,7 +49,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/johnhoysa/boxcar"
+    "url": "https://github.com/johnhoysa/portfolio2019"
   },
   "keywords": [],
   "author": "",

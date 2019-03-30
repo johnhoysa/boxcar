@@ -1,6 +1,0 @@
-@mixin fontStyle($size: 18px, $weight: 400, $color: $dark, $font: $font-stack) {
-  font-family: $font;
-  font-weight: $weight;
-  color: $color;
-  font-size: $size;
-}

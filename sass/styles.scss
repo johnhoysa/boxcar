@@ -1,19 +1,4 @@
 @import "./project/variables.scss";
-@import "./project/reset";
-@import "./mixins/container.scss";
 @import "./project/type.scss";
 @import "./project/header.scss";
-@import "./project/about-me.scss";
 @import "./project/footer.scss";
-a,
-a:hover {
-  color: $color-highlight;
-  text-decoration: none;
-  line-height: 100%;
-}
-
-.img-resp {
-  display: block;
-  width: 100%;
-  height: auto;
-}
